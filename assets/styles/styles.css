@@ -1,3 +1,7 @@
+:root {
+  --eggshell-color: hsl(30, 54%, 90%);
+  --wenge-brown-color: hsl(30, 11%, 34%);
+}
 html {
   box-sizing: border-box;
 }
@@ -6,10 +10,61 @@ html {
 *::after {
   box-sizing: inherit;
 }
+.outfit-400 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit-600 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.outfit-700 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  color: var(--wenge-brown-color);
+  background: var(--eggshell-color);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
   font-style: italic;
+}
+.recipe {
+  background: white;
+}
+.recipe__wrapper {
+  display: grid;
+  gap: 2rem;
+}
+.recipe__name {
+  margin: 0;
+  padding: 0 1rem;
+}
+.recipe__description {
+  margin: 0;
+  padding: 0 1rem;
+}
+.recipe__image {
+  order: -1;
+}
+.recipe__section {
+  padding: 0 1rem;
+}
+.recipe__section-name {
+  margin: 0;
 }
 /*# sourceMappingURL=./styles.css.map */
