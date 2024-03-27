@@ -46,10 +46,22 @@ img {
 
 .recipe {
 	background: var(--cl-white);
+	
+	@media (min-width:60rem) {
+		margin: 7.688rem auto;
+		width: 90%;
+		max-width: 46rem;
+		border-radius: 1.5rem;
+	}
 }
 
 .recipe__image {
 	margin-bottom: 2.5rem;
+	@media (min-width:60rem) {
+		padding: 2.5rem;
+		margin: 0;
+		border-radius: 3.25rem;
+	}
 }
 
 .recipe__title {
@@ -57,12 +69,20 @@ img {
 	color: var(--cl-dark-charcoal);
 	margin: 0 0 1.5rem;
 	padding: 0 2rem;
+
+	@media (min-width:60rem) {
+		padding: 0 2.5rem;
+	}
 }
 
 .recipe__main-content {
 	display: grid;
 	gap: 2rem;
 	padding: 0 2rem 1.75rem;
+	
+	@media (min-width:60rem) {
+		padding: 0 2.5rem 2rem;
+	}
 }
 
 .recipe__description {
