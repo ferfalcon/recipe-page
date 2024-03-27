@@ -51,7 +51,7 @@ img {
 .recipe__main-content {
   display: grid;
   gap: 2rem;
-  padding: 0 2rem;
+  padding: 0 2rem 1.75rem;
 }
 .recipe__description {
   margin: 0;
@@ -118,6 +118,9 @@ img {
   gap: 0.5rem;
   border-bottom: solid thin var(--cl-white-coffee);
   padding: 0.75rem 0;
+}
+.recipe__section--nutrition .recipe__section-data-list div:last-child {
+  border-bottom: 0;
 }
 .recipe__section--nutrition .recipe__section-data-list dt {
   padding-left: 2rem;
